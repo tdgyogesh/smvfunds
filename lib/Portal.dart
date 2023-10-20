@@ -14,6 +14,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import 'FetchPortalTeam.dart';
 import 'FetchPortalTeamModel.dart';
+import 'package:flutter_html/flutter_html.dart';
 
 class Portal extends StatefulWidget {
   const Portal({Key? key}) : super(key: key);
@@ -183,7 +184,11 @@ class _PortalState extends State<Portal> {
                                                             )
                                                           : null,
                                                       child: TextButton(
-                                                          onPressed: () {},
+                                                          onPressed: () {
+                                                            if (index == 1) {
+                                                              popUp("Application will be available soon, Thank you for your interest.", context);
+                                                            }
+                                                          },
                                                           child: Text(buttonsGroupBy[index].buttonLable!,
                                                               //'$index',
                                                               style: buttonsGroupBy[index].isOnTp! ? buttonStyleSelected : buttonStyleUnselected)),
@@ -202,6 +207,7 @@ class _PortalState extends State<Portal> {
                                         ),
                                         child: TextButton(
                                           onPressed: () {
+                                            popUp("Application will be available soon, Thank you for your interest.", context);
                                             setState(() {
                                               //Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginAndRegistration(true)));
                                             });
@@ -223,6 +229,7 @@ class _PortalState extends State<Portal> {
                                           ),
                                           child: TextButton(
                                             onPressed: () {
+                                              popUp("Application will be available soon, Thank you for your interest.", context);
                                               setState(() {
                                                 //Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginAndRegistration(false)));
                                               });
@@ -251,6 +258,16 @@ class _PortalState extends State<Portal> {
                   children: [
                     Wrap(
                       children: [
+                        Container(
+                            child: Image(
+                          height: 906.h,
+                          width: double.infinity,
+                          fit: BoxFit.cover,
+                          //image: networkImage("https://storage.googleapis.com/smco-web-static-assets/smv/smvPortalInvesterTree.png"),
+                          image: AssetImage(
+                            "assets/SMVPortalStartUp.png",
+                          ),
+                        )),
                         Container(
                           /* height: ResponsiveBreakpoints.of(context).smallerThan(DESKTOP)
                     ? 1130
@@ -308,6 +325,7 @@ class _PortalState extends State<Portal> {
                                                 ),
                                                 child: TextButton(
                                                   onPressed: () {
+                                                    popUp("Application will be available soon, Thank you for your interest.", context);
                                                     setState(() {
                                                       // Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginAndRegistration(true)));
                                                     });
@@ -464,6 +482,7 @@ class _PortalState extends State<Portal> {
                                   ),
                                   child: TextButton(
                                     onPressed: () {
+                                      popUp("Application will be available soon, Thank you for your interest.", context);
                                       setState(() {
                                         // Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginAndRegistration(true)));
                                       });
@@ -691,7 +710,7 @@ class _PortalState extends State<Portal> {
                                                                       inputTeamData!.getPortaTeamData[index].linkedinUrl.toString(),
                                                                       inputTeamData!.getPortaTeamData[index].twitterUrl.toString());*/
 
-                                                                            /* popUpDetail(
+                                                                            popUpDetail(
                                                                                 localImage[index].toString(),
                                                                                 context,
                                                                                 inputTeamData!.getPortaTeamData[index].memberName.toString(),
@@ -700,7 +719,7 @@ class _PortalState extends State<Portal> {
                                                                                 inputTeamData!.getPortaTeamData[index].facebookUrl.toString(),
                                                                                 inputTeamData!.getPortaTeamData[index].blogUrl.toString(),
                                                                                 inputTeamData!.getPortaTeamData[index].linkedinUrl.toString(),
-                                                                                inputTeamData!.getPortaTeamData[index].twitterUrl.toString());*/
+                                                                                inputTeamData!.getPortaTeamData[index].twitterUrl.toString());
                                                                           },
                                                                           child: Text(
                                                                             "View Bio",
@@ -881,6 +900,7 @@ class _PortalState extends State<Portal> {
                                                         ),
                                                         child: TextButton(
                                                           onPressed: () {
+                                                            popUp("Application will be available soon, Thank you for your interest.", context);
                                                             setState(() {
                                                               //Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginAndRegistration(true)));
                                                             });
@@ -1012,6 +1032,7 @@ class _PortalState extends State<Portal> {
                                                 ),
                                                 child: TextButton(
                                                   onPressed: () {
+                                                    popUp("Application will be available soon, Thank you for your interest.", context);
                                                     setState(() {
                                                       //Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginAndRegistration(true)));
                                                     });
@@ -1224,6 +1245,7 @@ class _PortalState extends State<Portal> {
                             ),
                             child: TextButton(
                               onPressed: () {
+                                popUp("Application will be available soon, Thank you for your interest.", context);
                                 setState(() {
                                   // Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginAndRegistration(true)));
                                 });
@@ -1251,6 +1273,95 @@ class _PortalState extends State<Portal> {
         ),
       )),
     );
+  }
+
+  popUp(String str, context) {
+    return showDialog(
+        context: context,
+        builder: (context) {
+          return Dialog(
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+              elevation: 16,
+              child: Container(
+                  width: 483.h,
+                  //height: 300.h,
+                  child: Wrap(
+                    crossAxisAlignment: WrapCrossAlignment.center,
+                    alignment: WrapAlignment.center,
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SizedBox(
+                            height: 52.h,
+                          ),
+                          Container(
+                            child: const Icon(
+                              Icons.info_outline,
+                              size: 70,
+                              color: Color.fromRGBO(255, 110, 33, 1),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 27.h,
+                          ),
+                          Container(
+                            child: Text(
+                              "Application will be available soon,",
+                              style: const TextStyle(
+                                color: Color.fromRGBO(23, 23, 23, 1),
+                                fontSize: 20,
+                                fontFamily: "Roboto",
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20.h,
+                          ),
+                          Container(
+                            child: Text(
+                              "Thank you for your interest.",
+                              style: const TextStyle(
+                                color: Color.fromRGBO(23, 23, 23, 1),
+                                fontSize: 20,
+                                fontFamily: "Roboto",
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 24.h,
+                          ),
+                          Container(
+                              height: 50.h,
+                              width: 130.w,
+                              child: TextButton(
+                                child: const Text(
+                                  "OK",
+                                ),
+                                style: TextButton.styleFrom(
+                                  shadowColor: Colors.white,
+                                  foregroundColor: Colors.white,
+                                  elevation: 5,
+                                  backgroundColor: Color.fromRGBO(11, 130, 3, 1),
+                                  textStyle: TextStyle(
+                                    // color:  Color.fromRGBO(255, 255, 255, 1),
+                                    fontSize: 18,
+                                    fontFamily: "Roboto",
+                                  ),
+                                ),
+                                onPressed: () {
+                                  Navigator.pop(context, "true");
+                                },
+                              )),
+                          SizedBox(
+                            height: 53.h,
+                          ),
+                        ],
+                      ),
+                    ],
+                  )));
+        });
   }
 
   Widget portalFooter(companyAddresssHQ, companyAddresssRegister) {
@@ -1469,6 +1580,230 @@ class _PortalState extends State<Portal> {
         //child: Image(image: networkImage(src)),
         child: Image(image: AssetImage(src)),
       ),
+    );
+  }
+
+  Future popUpDetail(String image, context, String name, String position, String content, String facebookUrl, String blogUrl, String linkedInUrl, String twitterUrl) {
+    return showGeneralDialog(
+      context: context,
+      pageBuilder: (context, a1, a2) {
+        return Container();
+      },
+      transitionBuilder: (context, a1, a2, child) {
+        var curve = Curves.easeInOut.transform(a1.value);
+        return Transform.scale(
+          scale: curve,
+          child: Dialog(
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+              elevation: 16,
+              backgroundColor: Colors.transparent,
+              child: Wrap(
+                children: [
+                  Container(
+                      width: 1383.w,
+                      margin: EdgeInsets.only(left: 0.0, right: 0.0),
+                      //height: 300.h,
+                      child: Stack(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(top: 23.0, right: 23.0),
+                            decoration: BoxDecoration(color: Colors.white, shape: BoxShape.rectangle, borderRadius: BorderRadius.circular(16.0), boxShadow: <BoxShadow>[
+                              BoxShadow(
+                                color: Colors.black26,
+                                blurRadius: 0.0,
+                                offset: Offset(0.0, 0.0),
+                              ),
+                            ]),
+                            child: Column(
+                              children: [
+                                Container(height: 83.h),
+                                Container(
+                                    padding: EdgeInsets.only(left: 40.w, right: 40.w),
+                                    child: Row(
+                                      children: [
+                                        Container(
+                                          height: 354.h,
+                                          width: 354.w,
+                                          child: CircleAvatar(
+                                            // backgroundImage: networkImage(image),
+                                            backgroundImage: AssetImage(image),
+                                            radius: 18,
+                                            backgroundColor: Colors.white,
+                                          ),
+                                        ),
+                                        Container(width: 25.w),
+                                        Expanded(
+                                            child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Container(
+                                              child: Text(
+                                                name.toString(),
+                                                style: TextStyle(
+                                                  color: Color.fromRGBO(44, 44, 44, 1),
+                                                  fontSize: 22,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                            ),
+                                            SizedBox(height: 5.h),
+                                            Container(
+                                              child: Text(
+                                                position.toString(),
+                                                style: TextStyle(
+                                                  color: Color.fromRGBO(112, 112, 112, 1),
+                                                  fontSize: 18,
+                                                ),
+                                              ),
+                                            ),
+                                            //SizedBox(height: 15.h),
+                                            Container(
+                                                child: Html(data: content.toString(), style: {
+                                              "body": Style(
+                                                  fontSize: const FontSize(
+                                                    16,
+                                                  ),
+                                                  color: Color.fromRGBO(0, 0, 0, 1),
+                                                  fontFamily: "Roboto"),
+                                            }
+                                                    /* style: TextStyle(
+                                                color: Color.fromRGBO(0, 0, 0, 1),
+                                                fontSize: 18,
+                                                height: 1,
+                                              ),*/
+                                                    )),
+                                            SizedBox(height: 25.h),
+                                            Container(
+                                              child: Row(
+                                                children: [
+                                                  Expanded(flex: 4, child: Container()),
+                                                  Expanded(
+                                                    flex: 1,
+                                                    child: Row(
+                                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                      children: [
+                                                        blogUrl.trim() != "" && blogUrl.trim() != "null"
+                                                            ? MouseRegion(
+                                                                cursor: SystemMouseCursors.click,
+                                                                child: GestureDetector(
+                                                                  onTap: () {
+                                                                    launchURL(blogUrl);
+                                                                  },
+                                                                  child: Container(
+                                                                      height: 30.h,
+                                                                      width: 30.w,
+                                                                      child: Image(
+                                                                        //fit: BoxFit.cover,
+                                                                        //image: networkImage("https://storage.googleapis.com/smco-web-static-assets/smv/smvPortalBlog.png"),
+                                                                        image: AssetImage("assets/TeamBlog.png"),
+                                                                      )),
+                                                                ),
+                                                              )
+                                                            : Container(),
+                                                        linkedInUrl != "null" && linkedInUrl.trim() != ""
+                                                            ? MouseRegion(
+                                                                cursor: SystemMouseCursors.click,
+                                                                child: GestureDetector(
+                                                                  onTap: () {
+                                                                    launchURL(linkedInUrl);
+                                                                  },
+                                                                  child: Container(
+                                                                      height: 30.h,
+                                                                      width: 30.w,
+                                                                      child: Image(
+                                                                        //fit: BoxFit.cover,
+                                                                        //image: networkImage("https://storage.googleapis.com/smco-web-static-assets/smv/smvPortalLinkedIn.png"),
+                                                                        image: AssetImage("assets/TeamLinkedIn.png"),
+                                                                      )),
+                                                                ),
+                                                              )
+                                                            : Container(),
+                                                        twitterUrl != "null" && twitterUrl.trim() != ""
+                                                            ? MouseRegion(
+                                                                cursor: SystemMouseCursors.click,
+                                                                child: GestureDetector(
+                                                                  onTap: () {
+                                                                    launchURL(twitterUrl);
+                                                                  },
+                                                                  child: Container(
+                                                                      height: 30.h,
+                                                                      width: 30.w,
+                                                                      child: Image(
+                                                                        //fit: BoxFit.cover,
+                                                                        image: AssetImage("assets/TeamTwitter.png"),
+                                                                        //image: networkImage("https://storage.googleapis.com/smco-web-static-assets/smv/smvPortalTwitter.png"),
+                                                                      )),
+                                                                ),
+                                                              )
+                                                            : Container(),
+                                                        facebookUrl != "null" && facebookUrl.trim() != ""
+                                                            ? MouseRegion(
+                                                                cursor: SystemMouseCursors.click,
+                                                                child: GestureDetector(
+                                                                  onTap: () {
+                                                                    launchURL(facebookUrl);
+                                                                  },
+                                                                  child: Container(
+                                                                      height: 30.h,
+                                                                      width: 30.w,
+                                                                      child: Image(
+                                                                        //fit: BoxFit.cover,
+                                                                        image: AssetImage("assets/TeamFacebook.png"),
+                                                                        //image: networkImage("https://storage.googleapis.com/smco-web-static-assets/smv/smvPortalFacebook.png"),
+                                                                      )),
+                                                                ),
+                                                              )
+                                                            : Container(),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ))
+                                      ],
+                                    )),
+                                Container(height: 83.h)
+                              ],
+                            ),
+                          ),
+                          Positioned(
+                            right: 0.0,
+                            child: MouseRegion(
+                              cursor: SystemMouseCursors.click,
+                              child: GestureDetector(
+                                onTap: () {
+                                  Navigator.of(context).pop();
+                                },
+                                child: Align(
+                                  alignment: Alignment.topRight,
+                                  child: Card(
+                                    elevation: 5,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(20.0),
+                                    ),
+                                    child: CircleAvatar(
+                                      radius: 20.0,
+                                      backgroundColor: Colors.white,
+                                      child: Icon(
+                                        Icons.close,
+                                        color: Color.fromRGBO(70, 70, 70, 1),
+                                        size: 40,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      )),
+                ],
+              )),
+        );
+      },
+      transitionDuration: const Duration(milliseconds: 300),
     );
   }
 }
