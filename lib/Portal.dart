@@ -1655,7 +1655,7 @@ class _PortalState extends State<Portal> {
                                                 ),
                                               ),
                                             ),
-                                            //SizedBox(height: 15.h),
+                                            SizedBox(height: 15.h),
                                             Container(
                                                 child: Text(
                                               content.toString(),

@@ -29,14 +29,14 @@ class FetchPortalTeam {
           "status": "Y",
           "member_name": "Selvan Rajan",
           "about_member_text":
-              "A technologist entrepreneur who is always thinking how to bring technology to people to make them more powerful and resourceful than they are. He worked for BEA Systems, Accenture, Washington Mutual, Wells Fargo, Capital One, Sony, Google, and Uber. </br>\n  He received EMBA from TRIUM EMBA and has Master in Science in Math and Bachelor of Science in Math, Physics, Statistics & CS from Bharathidasan University and Madras University respectively.",
+              "A technologist entrepreneur who is always thinking how to bring technology to people to make them more powerful and resourceful than they are. He worked for BEA Systems, Accenture, Washington Mutual, Wells Fargo, Capital One, Sony, Google, and Uber. \n  He received EMBA from TRIUM EMBA and has Master in Science in Math and Bachelor of Science in Math, Physics, Statistics & CS from Bharathidasan University and Madras University respectively.",
           "linkedin_url": "https://www.linkedin.com/in/selvanrajan/"
         },
         {
           "member_name": "Leticia Garcia",
           "member_image_file_name": "https://storage.googleapis.com/smco-web-static-assets/SmPortal/assets/img/companyPeoples/Leticia-Garcia.png",
           "about_member_text":
-              "Executive leader with diverse experience in corporate strategy, operations, change management, global software implementations, human resource management, finance, and marketing. </br></br>Has EMBA from TRIUM EMBA program jointly offered by London School of Economics, New York University Stern and HEC Paris. She went to Santa Clara University.",
+              "Executive leader with diverse experience in corporate strategy, operations, change management, global software implementations, human resource management, finance, and marketing.Has EMBA from TRIUM EMBA program jointly offered by London School of Economics, New York University Stern and HEC Paris. She went to Santa Clara University.",
           "facebook_url": null,
           "member_id": 2,
           "member_aligned_groups": "Executives",
@@ -69,7 +69,7 @@ class FetchPortalTeam {
           "member_name": "Varsha Jain",
           "linkedin_url": "https://www.linkedin.com/in/varsha-jain-41a63024/",
           "about_member_text":
-              " Varsha has extensive experience in financial and valuation analysis. She worked at Amazon as a Senior Financial Operations Analyst at their Global Financial Operations division. She was responsible for vendor financial management.</br>\r   Varsha has Masters in Investment and Financial Analysis, Investments and Securities and  Chartered Financial Analyst, Financial Analysis from ICFAI. She also has an MBA in Accounting and Finance from Regional College of Management, Bhubaneswar. She did her Bachelors in Commerce from Berhampur University.",
+              " Varsha has extensive experience in financial and valuation analysis. She worked at Amazon as a Senior Financial Operations Analyst at their Global Financial Operations division. She was responsible for vendor financial management.\r  Varsha has Masters in Investment and Financial Analysis, Investments and Securities and  Chartered Financial Analyst, Financial Analysis from ICFAI. She also has an MBA in Accounting and Finance from Regional College of Management, Bhubaneswar. She did her Bachelors in Commerce from Berhampur University.",
           "member_image_file_name": "https://storage.googleapis.com/smco-web-static-assets/SmPortal/assets/img/companyPeoples/Varsha.png",
           "twitter_url": "",
           "member_designation": "Manager Investments & Analysis"
