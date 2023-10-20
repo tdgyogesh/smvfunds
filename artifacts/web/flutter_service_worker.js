@@ -3,8 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"index.html": "4b35cec2609dc38d25d3539976d890ed",
-"/": "4b35cec2609dc38d25d3539976d890ed",
+const RESOURCES = {"index.html": "1de7575715a43e307f75745ca702a3ba",
+"/": "1de7575715a43e307f75745ca702a3ba",
 "version.json": "b9f8577d4095ce2f8cd513ed73dee80f",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "assets/AssetManifest.bin": "51ba8f94f78732a41d581785586a0c5a",
@@ -37,7 +37,7 @@ const RESOURCES = {"index.html": "4b35cec2609dc38d25d3539976d890ed",
 "assets/assets/Ola%2520Johnson.png": "2ff06d93c432261927a61b8e1f64b368",
 "assets/assets/Susan%2520Berman.png": "dd6660b7eb6bf94c56eb363cb88becd2",
 "assets/assets/editorBlog.html": "45328f0d44c9af8bfc4f93016e6d3533",
-"assets/assets/SMVPortalStartUp.png": "d367be527f01707a96d3648b61f4b1c8",
+"assets/assets/SMVPortalStartUp.png": "2bac5de38302b0333f88e6facfbc0020",
 "assets/assets/TeamLinkedIn.png": "bf3370e0e8eae7da92a18a5d0b289755",
 "assets/assets/Angelo%2520Noronha.png": "2e4ab1d96db1c1573e0683be0c36996b",
 "assets/assets/Leticia-Garcia.png": "632ee3fa21c803c14ea27b742faed509",
