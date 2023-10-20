@@ -66089,7 +66089,7 @@ a4K(a,b){var s,r=this,q=null,p=1073741823,o=A.aZ(57,53,50,1),n=A.cb(A.aw(q,q,q),
 m.toString
 m=A.bi(m).aU("DESKTOP")?B.c5:B.bA
 s=t.F
-return A.F(q,A.ce(A.a([n,A.cb(A.c9(A.a([A.F(q,A.vm(A.a([A.d6(A.c9(A.a([A.F(q,B.KY,B.e,q,q,q,q,q,q,q,q,q,q),A.aw(q,10,q),A.F(q,B.KP,B.e,q,q,q,q,q,q,q,q,q,q),A.aw(q,10,q),A.F(q,B.KW,B.e,q,q,q,q,q,q,q,q,q,q),A.aw(q,10,q),A.F(q,B.L0,B.e,q,q,q,q,q,q,q,q,q,q),A.aw(q,10,q)],s),B.O,B.n,B.m,q,q,B.k),q,q,p,!0,q,q,p),A.d6(A.aw(q,10,10),q,q,p,!0,q,q,p),A.d6(A.c9(A.a([A.F(q,B.KZ,B.e,q,q,q,q,q,q,q,q,q,q),B.bD,A.F(q,B.KQ,B.e,q,q,q,q,q,q,q,q,q,q),B.bD,A.F(q,B.KT,B.e,q,q,q,q,q,q,q,q,q,q),B.bD,A.F(q,B.KU,B.e,q,q,q,q,q,q,q,q,q,q),B.bD],s),B.O,B.n,B.m,q,q,B.k),q,q,p,!0,q,q,p),A.d6(A.aw(q,10,10),q,q,p,!0,q,q,p),A.d6(A.c9(A.a([A.F(q,B.L_,B.e,q,q,q,q,q,q,q,q,q,q),B.bD,A.F(q,B.KX,B.e,q,q,q,q,q,q,q,q,q,q),B.bD,A.F(q,B.KS,B.e,q,q,q,q,q,q,q,q,q,q),B.bD],s),B.O,B.n,B.m,q,q,B.k),q,q,p,!0,q,q,p),A.d6(A.aw(q,10,10),q,q,p,!0,q,q,p),A.d6(A.c9(A.a([A.F(q,B.KV,B.e,q,q,q,q,q,q,q,q,q,q),B.Gw,A.ce(A.a([A.ez(q,r.nO("assets/Fb.png"),B.S,!1,q,q,q,q,q,q,q,q,q,q,q,q,q,q,new A.a8v(),q,q,q),B.eB,A.ez(q,r.nO("assets/Twitter.png"),B.S,!1,q,q,q,q,q,q,q,q,q,q,q,q,q,q,new A.a8w(),q,q,q),B.eB,A.ez(q,r.nO("assets/LinkedIn.png"),B.S,!1,q,q,q,q,q,q,q,q,q,q,q,q,q,q,new A.a8x(),q,q,q),B.eB,A.ez(q,r.nO("assets/Insta.png"),B.S,!1,q,q,q,q,q,q,q,q,q,q,q,q,q,q,new A.a8y(),q,q,q),B.eB,r.nO("assets/Youtube-1.png")],s),B.t,B.aN,B.m,q,q,B.k)],s),B.O,B.n,B.m,q,q,B.k),q,q,p,!0,q,q,p)],t.rH),B.O,B.n,m,B.O,B.aN),B.e,q,q,q,q,q,q,new A.aF(0,28,0,10),q,q,q),A.F(q,new A.BW(0.1,B.j,q),B.e,q,q,q,q,q,q,q,q,q,q),A.aw(q,8,q),A.F(q,A.b0("Copyright (c) 2022 - Now. SmartMoney Ventures, LLC. All rights reserved.",A.b1(q,q,B.j,q,B.f,q,q,q,"Roboto",q,q,14,q,q,B.H,q,q,!0,q,q,q,q,q,q,q,q),q),B.e,q,q,q,q,q,q,q,q,q,q),A.aw(q,8,q)],s),B.t,B.n,B.m,q,q,B.k),20),A.cb(A.aw(q,q,q),4)],s),B.t,B.n,B.m,q,q,B.k),B.e,q,q,new A.bD(o,q,q,q,q,q,B.K),q,q,q,q,q,q,1/0)},
+return A.F(q,A.ce(A.a([n,A.cb(A.c9(A.a([A.F(q,A.vm(A.a([A.d6(A.c9(A.a([A.F(q,B.KY,B.e,q,q,q,q,q,q,q,q,q,q),A.aw(q,10,q),A.F(q,B.KP,B.e,q,q,q,q,q,q,q,q,q,q),A.aw(q,10,q),A.F(q,B.KX,B.e,q,q,q,q,q,q,q,q,q,q),A.aw(q,10,q),A.F(q,B.L0,B.e,q,q,q,q,q,q,q,q,q,q),A.aw(q,10,q)],s),B.O,B.n,B.m,q,q,B.k),q,q,p,!0,q,q,p),A.d6(A.aw(q,10,10),q,q,p,!0,q,q,p),A.d6(A.c9(A.a([A.F(q,B.KZ,B.e,q,q,q,q,q,q,q,q,q,q),B.bD,A.F(q,B.KQ,B.e,q,q,q,q,q,q,q,q,q,q),B.bD,A.F(q,B.KS,B.e,q,q,q,q,q,q,q,q,q,q),B.bD,A.F(q,B.KT,B.e,q,q,q,q,q,q,q,q,q,q),B.bD],s),B.O,B.n,B.m,q,q,B.k),q,q,p,!0,q,q,p),A.d6(A.aw(q,10,10),q,q,p,!0,q,q,p),A.d6(A.c9(A.a([A.F(q,B.L_,B.e,q,q,q,q,q,q,q,q,q,q),B.bD,A.F(q,B.KU,B.e,q,q,q,q,q,q,q,q,q,q),B.bD,A.F(q,B.KW,B.e,q,q,q,q,q,q,q,q,q,q),B.bD],s),B.O,B.n,B.m,q,q,B.k),q,q,p,!0,q,q,p),A.d6(A.aw(q,10,10),q,q,p,!0,q,q,p),A.d6(A.c9(A.a([A.F(q,B.KV,B.e,q,q,q,q,q,q,q,q,q,q),B.Gw,A.ce(A.a([A.ez(q,r.nO("assets/Fb.png"),B.S,!1,q,q,q,q,q,q,q,q,q,q,q,q,q,q,new A.a8v(),q,q,q),B.eB,A.ez(q,r.nO("assets/Twitter.png"),B.S,!1,q,q,q,q,q,q,q,q,q,q,q,q,q,q,new A.a8w(),q,q,q),B.eB,A.ez(q,r.nO("assets/LinkedIn.png"),B.S,!1,q,q,q,q,q,q,q,q,q,q,q,q,q,q,new A.a8x(),q,q,q),B.eB,A.ez(q,r.nO("assets/Insta.png"),B.S,!1,q,q,q,q,q,q,q,q,q,q,q,q,q,q,new A.a8y(),q,q,q),B.eB,r.nO("assets/Youtube-1.png")],s),B.t,B.aN,B.m,q,q,B.k)],s),B.O,B.n,B.m,q,q,B.k),q,q,p,!0,q,q,p)],t.rH),B.O,B.n,m,B.O,B.aN),B.e,q,q,q,q,q,q,new A.aF(0,28,0,10),q,q,q),A.F(q,new A.BW(0.1,B.j,q),B.e,q,q,q,q,q,q,q,q,q,q),A.aw(q,8,q),A.F(q,A.b0("Copyright (c) 2022 - Now. SmartMoney Ventures, LLC. All rights reserved.",A.b1(q,q,B.j,q,B.f,q,q,q,"Roboto",q,q,14,q,q,B.H,q,q,!0,q,q,q,q,q,q,q,q),q),B.e,q,q,q,q,q,q,q,q,q,q),A.aw(q,8,q)],s),B.t,B.n,B.m,q,q,B.k),20),A.cb(A.aw(q,q,q),4)],s),B.t,B.n,B.m,q,q,B.k),B.e,q,q,new A.bD(o,q,q,q,q,q,B.K),q,q,q,q,q,q,1/0)},
 fi(a){var s=0,r=A.X(t.z)
 var $async$fi=A.Y(function(b,c){if(b===1)return A.U(c,r)
 while(true)switch(s){case 0:s=4
@@ -71024,14 +71024,14 @@ B.bf=new A.r(!0,B.j,null,"Roboto",null,null,16,B.H,null,null,null,null,null,null
 B.KQ=new A.dI("Company",null,B.bf,null,null)
 B.KP=new A.dI("Terms and Conditions",null,B.bf,null,null)
 B.KR=new A.dI("OK",null,null,null,null)
-B.KS=new A.dI("Feedback: feedback@smartmoney.co",null,B.bf,null,null)
-B.KT=new A.dI("Mission and Vision",null,B.bf,null,null)
-B.KU=new A.dI("The Team",null,B.bf,null,null)
+B.KS=new A.dI("Mission and Vision",null,B.bf,null,null)
+B.KT=new A.dI("The Team",null,B.bf,null,null)
+B.KU=new A.dI("Support: support@smartmoneyventure.com",null,B.bf,null,null)
 B.xU=new A.Q(4291611852)
 B.eF=new A.r(!0,B.xU,null,"Roboto",null,null,16,null,null,null,null,null,null,null,null,null,null,B.f,null,null,null,null,null,null,null,null)
 B.KV=new A.dI("FOLLOW SM VENTURES ON SOCIAL",null,B.eF,null,null)
-B.KW=new A.dI("Privacy Policy",null,B.bf,null,null)
-B.KX=new A.dI("Support: support@smartmoney.co",null,B.bf,null,null)
+B.KW=new A.dI("Feedback: feedback@smartmoneyventure.com",null,B.bf,null,null)
+B.KX=new A.dI("Privacy Policy",null,B.bf,null,null)
 B.KZ=new A.dI("ABOUT US",null,B.eF,null,null)
 B.KY=new A.dI("LEGAL",null,B.eF,null,null)
 B.L_=new A.dI("REACH US",null,B.eF,null,null)
