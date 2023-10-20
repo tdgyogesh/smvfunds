@@ -1243,13 +1243,214 @@ class _PortalState extends State<Portal> {
                   ],
                 ),
               ),
-              /*Container(
-                child: PortalFooter(footerMap1, footerMap2),
-              )*/
+              Container(
+                child: portalFooter(footerMap1, footerMap2),
+              )
             ],
           ),
         ),
       )),
+    );
+  }
+
+  Widget portalFooter(companyAddresssHQ, companyAddresssRegister) {
+    return Container(
+      // height: 230.h,
+      width: double.infinity,
+      decoration: BoxDecoration(color: Color.fromRGBO(57, 53, 50, 1)),
+      child: Row(
+        children: [
+          Expanded(flex: 4, child: SizedBox()),
+          Expanded(
+            flex: 20,
+            child: Column(
+              children: [
+                Container(
+                  padding: EdgeInsets.only(top: 28, bottom: 10),
+                  child: ResponsiveRowColumn(
+                    layout: ResponsiveBreakpoints.of(context).smallerThan(DESKTOP) ? ResponsiveRowColumnType.COLUMN : ResponsiveRowColumnType.ROW,
+                    rowMainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    rowCrossAxisAlignment: CrossAxisAlignment.start,
+                    columnCrossAxisAlignment: CrossAxisAlignment.start,
+                    columnMainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      ResponsiveRowColumnItem(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                                child: const Text(
+                              "LEGAL",
+                              style: TextStyle(color: Color.fromRGBO(204, 204, 204, 1), fontFamily: "Roboto", fontSize: 16, decoration: TextDecoration.none),
+                            )),
+                            SizedBox(height: 10),
+                            Container(
+                                child: const Text("Terms and Conditions",
+                                    style: TextStyle(color: Colors.white, fontFamily: "Roboto", fontSize: 16, decoration: TextDecoration.none, fontWeight: FontWeight.bold))),
+                            SizedBox(height: 10),
+                            Container(
+                                child: const Text("Privacy Policy",
+                                    style: TextStyle(color: Colors.white, fontFamily: "Roboto", fontSize: 16, decoration: TextDecoration.none, fontWeight: FontWeight.bold))),
+                            SizedBox(height: 10),
+                            Container(
+                                child: const Text("Security",
+                                    style: TextStyle(color: Colors.white, fontFamily: "Roboto", fontSize: 16, decoration: TextDecoration.none, fontWeight: FontWeight.bold))),
+                            SizedBox(height: 10),
+                          ],
+                        ),
+                      ),
+                      ResponsiveRowColumnItem(
+                        child: SizedBox(
+                          height: 10,
+                          width: 10,
+                        ),
+                      ),
+                      ResponsiveRowColumnItem(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                                child: const Text(
+                              "ABOUT US",
+                              style: TextStyle(color: Color.fromRGBO(204, 204, 204, 1), fontFamily: "Roboto", fontSize: 16, decoration: TextDecoration.none),
+                            )),
+                            const SizedBox(height: 10),
+                            Container(
+                              child: const Text("Company",
+                                  style: TextStyle(color: Colors.white, fontFamily: "Roboto", fontSize: 16, decoration: TextDecoration.none, fontWeight: FontWeight.bold)),
+                            ),
+                            const SizedBox(height: 10),
+                            Container(
+                                child: const Text("Mission and Vision",
+                                    style: TextStyle(color: Colors.white, fontFamily: "Roboto", fontSize: 16, decoration: TextDecoration.none, fontWeight: FontWeight.bold))),
+                            const SizedBox(height: 10),
+                            Container(
+                                child: const Text("The Team",
+                                    style: TextStyle(color: Colors.white, fontFamily: "Roboto", fontSize: 16, decoration: TextDecoration.none, fontWeight: FontWeight.bold))),
+                            const SizedBox(height: 10),
+                          ],
+                        ),
+                      ),
+                      ResponsiveRowColumnItem(
+                        child: SizedBox(
+                          height: 10,
+                          width: 10,
+                        ),
+                      ),
+                      ResponsiveRowColumnItem(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                                child: const Text(
+                              "REACH US",
+                              style: TextStyle(color: Color.fromRGBO(204, 204, 204, 1), fontFamily: "Roboto", fontSize: 16, decoration: TextDecoration.none),
+                            )),
+                            const SizedBox(height: 10),
+                            Container(
+                                child: const Text("Support: support@smartmoney.co",
+                                    style: TextStyle(color: Colors.white, fontFamily: "Roboto", fontSize: 16, decoration: TextDecoration.none, fontWeight: FontWeight.bold))),
+                            const SizedBox(height: 10),
+                            Container(
+                                child: const Text("Feedback: feedback@smartmoney.co",
+                                    style: TextStyle(color: Colors.white, fontFamily: "Roboto", fontSize: 16, decoration: TextDecoration.none, fontWeight: FontWeight.bold))),
+                            const SizedBox(height: 10),
+                          ],
+                        ),
+                      ),
+                      ResponsiveRowColumnItem(
+                        child: SizedBox(
+                          height: 10,
+                          width: 10,
+                        ),
+                      ),
+                      ResponsiveRowColumnItem(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                                child: const Text(
+                              "FOLLOW SM VENTURES ON SOCIAL",
+                              style: TextStyle(color: Color.fromRGBO(204, 204, 204, 1), fontFamily: "Roboto", fontSize: 16, decoration: TextDecoration.none),
+                            )),
+                            const SizedBox(height: 15),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                GestureDetector(
+                                  onTap: () {
+                                    //getShareHistory('https://storage.googleapis.com/smco-web-static-assets/smco/jsp/dashboard/v4/docs/assets/img/Fb-1%402x.png');
+                                  },
+                                  //child: circularImage("https://storage.googleapis.com/smco-web-static-assets/smv/Fb-1.png"),
+                                  child: circularImage("assets/Fb.png"),
+                                ),
+                                const SizedBox(
+                                  width: 15,
+                                ),
+                                GestureDetector(
+                                    onTap: () {
+                                      // getShareHistory('https://twitter.com/messages/compose?text=hi');
+                                    },
+                                    //child: circularImage("https://storage.googleapis.com/smco-web-static-assets/smv/Twitter-1.png")
+                                    child: circularImage("assets/Twitter.png")),
+                                const SizedBox(
+                                  width: 15,
+                                ),
+                                GestureDetector(
+                                  onTap: () {
+                                    // print("uri" + uri);
+                                    //getShareHistory('https://www.linkedin.com/');
+                                  },
+                                  //child: circularImage("https://storage.googleapis.com/smco-web-static-assets/smv/Linked-1.png"),
+                                  child: circularImage("assets/LinkedIn.png"),
+                                ),
+                                const SizedBox(
+                                  width: 15,
+                                ),
+                                GestureDetector(
+                                  onTap: () {
+                                    //getShareHistory('https://www.linkedin.com/');
+                                  },
+                                  //child: circularImage("https://storage.googleapis.com/smco-web-static-assets/smv/Insta-1.png"),
+                                  child: circularImage("assets/Insta.png"),
+                                ),
+                                const SizedBox(
+                                  width: 15,
+                                ),
+                                //circularImage("https://storage.googleapis.com/smco-web-static-assets/smv/youtube.png"),
+                                circularImage("assets/Youtube-1.png"),
+                              ],
+                            ),
+                            //const SizedBox(height: 10),
+                          ],
+                        ),
+                      ),
+                      // ResponsiveRowColumnItem(
+                      //   child: SizedBox(
+                      //     height: 10,
+                      //     width: 10,
+                      //   ),
+                      // ),
+                    ],
+                  ),
+                ),
+                //  SizedBox(height: 5),
+                Container(
+                    child: Divider(
+                  color: Colors.white,
+                  thickness: 0.1,
+                )),
+                SizedBox(height: 8),
+                Container(
+                    child: Text("Copyright (c) 2022 - Now. SmartMoney Ventures, LLC. All rights reserved.",
+                        style: TextStyle(color: Colors.white, fontFamily: "Roboto", fontSize: 14, decoration: TextDecoration.none, fontWeight: FontWeight.bold))),
+                SizedBox(height: 8),
+              ],
+            ),
+          ),
+          Expanded(flex: 4, child: SizedBox()),
+        ],
+      ),
     );
   }
 
@@ -1258,6 +1459,17 @@ class _PortalState extends State<Portal> {
     if (await canLaunchUrl(Uri.parse(url))) {
       await launchUrl(Uri.parse(url), webOnlyWindowName: "_blank");
     }
+  }
+
+  Widget circularImage(src) {
+    return CircleAvatar(
+      backgroundColor: Colors.black12,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(10),
+        //child: Image(image: networkImage(src)),
+        child: Image(image: AssetImage(src)),
+      ),
+    );
   }
 }
 
