@@ -14,7 +14,6 @@ import 'package:url_launcher/url_launcher.dart';
 
 import 'FetchPortalTeam.dart';
 import 'FetchPortalTeamModel.dart';
-import 'package:flutter_html/flutter_html.dart';
 
 class Portal extends StatefulWidget {
   const Portal({Key? key}) : super(key: key);
@@ -1583,7 +1582,7 @@ class _PortalState extends State<Portal> {
     );
   }
 
-  Future popUpDetail(String image, context, String name, String position, String content, String facebookUrl, String blogUrl, String linkedInUrl, String twitterUrl) {
+  popUpDetail(String image, context, String name, String position, String content, String facebookUrl, String blogUrl, String linkedInUrl, String twitterUrl) {
     return showGeneralDialog(
       context: context,
       pageBuilder: (context, a1, a2) {
@@ -1658,20 +1657,16 @@ class _PortalState extends State<Portal> {
                                             ),
                                             //SizedBox(height: 15.h),
                                             Container(
-                                                child: Html(data: content.toString(), style: {
-                                              "body": Style(
-                                                  fontSize: const FontSize(
-                                                    16,
-                                                  ),
-                                                  color: Color.fromRGBO(0, 0, 0, 1),
-                                                  fontFamily: "Roboto"),
-                                            }
-                                                    /* style: TextStyle(
+                                                child: Text(
+                                              content.toString(),
+                                              style: TextStyle(fontSize: 16, color: Color.fromRGBO(0, 0, 0, 1), fontFamily: "Roboto"),
+
+                                              /* style: TextStyle(
                                                 color: Color.fromRGBO(0, 0, 0, 1),
                                                 fontSize: 18,
                                                 height: 1,
                                               ),*/
-                                                    )),
+                                            )),
                                             SizedBox(height: 25.h),
                                             Container(
                                               child: Row(

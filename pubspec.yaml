@@ -44,7 +44,7 @@ dependencies:
   flutter_screenutil:
   responsive_grid:
   url_launcher:
-  flutter_html: 2.2.1
+
 
 dev_dependencies:
   flutter_test:
