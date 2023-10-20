@@ -1458,11 +1458,11 @@ class _PortalState extends State<Portal> {
                             )),
                             const SizedBox(height: 10),
                             Container(
-                                child: const Text("Support: support@smartmoney.co",
+                                child: const Text("Support: support@smartmoneyventure.com",
                                     style: TextStyle(color: Colors.white, fontFamily: "Roboto", fontSize: 16, decoration: TextDecoration.none, fontWeight: FontWeight.bold))),
                             const SizedBox(height: 10),
                             Container(
-                                child: const Text("Feedback: feedback@smartmoney.co",
+                                child: const Text("Feedback: feedback@smartmoneyventure.com",
                                     style: TextStyle(color: Colors.white, fontFamily: "Roboto", fontSize: 16, decoration: TextDecoration.none, fontWeight: FontWeight.bold))),
                             const SizedBox(height: 10),
                           ],
